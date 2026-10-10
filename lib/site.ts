@@ -21,6 +21,7 @@ export const mainNav = [
   { label: "Home", href: "/" },
   { label: "Calculators", href: "/calculators" },
   { label: "Learn", href: "/learn" },
+  { label: "Practice", href: "/practice" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -29,6 +30,7 @@ export const footerNav = {
   product: [
     { label: "All Calculators", href: "/calculators" },
     { label: "Learn Math", href: "/learn" },
+    { label: "Practice", href: "/practice" },
     { label: "About Us", href: "/about" },
   ],
   company: [

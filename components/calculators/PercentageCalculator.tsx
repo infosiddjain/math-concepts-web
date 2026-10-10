@@ -80,8 +80,8 @@ export function PercentageCalculator() {
             className={clsx(
               "rounded-full px-4 py-2 text-xs font-semibold tracking-wide transition-colors",
               mode === m.id
-                ? "bg-gold-500 text-navy-950"
-                : "border border-navy-600 text-slate-400 hover:text-ivory-100"
+                ? "bg-crimson-500 text-on-accent"
+                : "border border-ink-600 text-steel-400 hover:text-cloud-100"
             )}
           >
             {m.label}
@@ -99,7 +99,7 @@ export function PercentageCalculator() {
       </div>
 
       {mode === "adjust" ? (
-        <div className="mt-4 inline-flex overflow-hidden rounded-full border border-navy-600 text-xs">
+        <div className="mt-4 inline-flex overflow-hidden rounded-full border border-ink-600 text-xs">
           {(["increase", "decrease"] as const).map((d) => (
             <button
               key={d}
@@ -107,8 +107,8 @@ export function PercentageCalculator() {
               className={clsx(
                 "px-4 py-2 font-semibold uppercase tracking-wide transition-colors",
                 adjustDirection === d
-                  ? "bg-gold-500 text-navy-950"
-                  : "bg-navy-900 text-slate-400 hover:text-ivory-100"
+                  ? "bg-crimson-500 text-on-accent"
+                  : "bg-ink-900 text-steel-400 hover:text-cloud-100"
               )}
             >
               {d}

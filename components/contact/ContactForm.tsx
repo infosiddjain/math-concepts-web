@@ -42,14 +42,14 @@ export function ContactForm() {
           required
           rows={6}
           placeholder="What's on your mind?"
-          className="w-full resize-none rounded-xl border border-navy-600 bg-navy-900/70 px-4 py-3 text-base text-ivory-100 outline-none transition-colors placeholder:text-slate-500 focus:border-gold-500/60"
+          className="w-full resize-none rounded-xl border border-ink-600 bg-ink-900/70 px-4 py-3 text-base text-cloud-100 outline-none transition-colors placeholder:text-steel-500 focus:border-crimson-500/60"
         />
       </Field>
 
       <Button type="submit">Send message</Button>
 
       {sent ? (
-        <p className="text-sm text-gold-400">
+        <p className="text-sm text-crimson-400">
           Your email app should now be open with your message ready to send. If nothing
           opened, email us directly at {site.email}.
         </p>

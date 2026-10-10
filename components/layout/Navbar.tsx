@@ -26,10 +26,10 @@ export function Navbar() {
   return (
     <header
       className={clsx(
-        "sticky top-0 z-50 w-full transition-colors duration-300",
+        "fixed inset-x-0 top-0 z-50 w-full border-b backdrop-blur-md transition-colors duration-300",
         scrolled
-          ? "border-b border-gold-500/15 bg-navy-950/85 backdrop-blur-md"
-          : "border-b border-transparent bg-transparent"
+          ? "border-crimson-500/25 bg-ink-900/95"
+          : "border-ink-700 bg-ink-900/85"
       )}
     >
       <Container className="flex items-center justify-between py-4">
@@ -45,7 +45,7 @@ export function Navbar() {
                 href={item.href}
                 className={clsx(
                   "text-sm font-medium tracking-wide transition-colors",
-                  active ? "text-gold-400" : "text-ivory-300 hover:text-gold-400"
+                  active ? "text-crimson-400" : "text-cloud-300 hover:text-crimson-400"
                 )}
               >
                 {item.label}
@@ -64,7 +64,7 @@ export function Navbar() {
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-gold-500/25 text-ivory-100 md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-crimson-500/25 text-cloud-100 md:hidden"
         >
           <Icon name={open ? "close" : "menu"} className="h-5 w-5" />
         </button>
@@ -77,7 +77,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="overflow-hidden border-b border-gold-500/15 bg-navy-950 md:hidden"
+            className="overflow-hidden border-b border-crimson-500/15 bg-ink-900 md:hidden"
           >
             <Container className="flex flex-col gap-1 py-4">
               {mainNav.map((item) => (
@@ -85,7 +85,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-3 text-sm font-medium text-ivory-200 hover:bg-navy-800 hover:text-gold-400"
+                  className="rounded-lg px-3 py-3 text-sm font-medium text-cloud-200 hover:bg-ink-800 hover:text-crimson-400"
                 >
                   {item.label}
                 </Link>

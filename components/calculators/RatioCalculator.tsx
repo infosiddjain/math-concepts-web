@@ -65,8 +65,8 @@ export function RatioCalculator() {
             className={clsx(
               "rounded-full px-4 py-2 text-xs font-semibold tracking-wide transition-colors",
               mode === m
-                ? "bg-gold-500 text-navy-950"
-                : "border border-navy-600 text-slate-400 hover:text-ivory-100"
+                ? "bg-crimson-500 text-on-accent"
+                : "border border-ink-600 text-steel-400 hover:text-cloud-100"
             )}
           >
             {m === "simplify" ? "Simplify a ratio" : "Solve a proportion"}
@@ -95,18 +95,18 @@ export function RatioCalculator() {
         </>
       ) : (
         <>
-          <p className="mt-6 text-sm text-slate-400">
+          <p className="mt-6 text-sm text-steel-400">
             Solve a : b = c : d — leave exactly one field empty.
           </p>
           <div className="mt-4 grid grid-cols-4 items-center gap-2">
             <NumberField value={pa} onChange={setPa} placeholder="a" />
-            <span className="text-center text-slate-500">:</span>
+            <span className="text-center text-steel-500">:</span>
             <NumberField value={pb} onChange={setPb} placeholder="b" />
-            <span className="text-center text-slate-500">=</span>
+            <span className="text-center text-steel-500">=</span>
           </div>
           <div className="mt-2 grid grid-cols-4 items-center gap-2">
             <NumberField value={pc} onChange={setPc} placeholder="c" />
-            <span className="text-center text-slate-500">:</span>
+            <span className="text-center text-steel-500">:</span>
             <NumberField value={pd} onChange={setPd} placeholder="d" />
             <span />
           </div>

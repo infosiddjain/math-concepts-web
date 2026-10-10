@@ -75,7 +75,7 @@ export function UnitConverter() {
           type="button"
           onClick={swap}
           aria-label="Swap units"
-          className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-navy-600 text-gold-400 transition-colors hover:border-gold-500/60 sm:mb-0.5"
+          className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-ink-600 text-crimson-400 transition-colors hover:border-crimson-500/60 sm:mb-0.5"
         >
           <Icon name="swap" className="h-5 w-5" />
         </button>

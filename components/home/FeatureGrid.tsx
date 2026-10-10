@@ -32,7 +32,7 @@ const features = [
 
 export function FeatureGrid() {
   return (
-    <section className="border-t border-navy-700 bg-navy-900 py-24">
+    <section className="border-t border-ink-700 bg-ink-900 py-24">
       <Container>
         <SectionHeading
           eyebrow="Why Math Concepts"
@@ -43,14 +43,14 @@ export function FeatureGrid() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, i) => (
             <Reveal key={feature.title} delay={i * 0.08}>
-              <div className="group h-full rounded-2xl border border-navy-600 bg-navy-800/60 p-6 transition-colors duration-300 hover:border-gold-500/40">
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-navy-700 text-gold-400 transition-transform duration-300 group-hover:scale-105">
+              <div className="group h-full rounded-2xl card-surface p-6 transition-colors duration-300 hover:border-steel-400">
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-ink-700 text-crimson-400 transition-transform duration-300 group-hover:scale-105">
                   <Icon name={feature.icon} className="h-5 w-5" />
                 </span>
-                <h3 className="mt-5 font-serif text-lg text-ivory-100">
+                <h3 className="mt-5 font-serif text-lg text-cloud-100">
                   {feature.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                <p className="mt-2 text-sm leading-relaxed text-steel-400">
                   {feature.description}
                 </p>
               </div>

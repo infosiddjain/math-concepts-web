@@ -79,8 +79,8 @@ export function FractionCalculator() {
               className={clsx(
                 "flex h-10 w-10 items-center justify-center rounded-lg text-sm font-semibold transition-colors",
                 op === o
-                  ? "bg-gold-500 text-navy-950"
-                  : "border border-navy-600 text-slate-400 hover:text-ivory-100"
+                  ? "bg-crimson-500 text-on-accent"
+                  : "border border-ink-600 text-steel-400 hover:text-cloud-100"
               )}
             >
               {o}
@@ -124,7 +124,7 @@ function FractionInput({
       <Field label="Numerator">
         <NumberField value={numerator} onChange={onNumerator} />
       </Field>
-      <div className="h-px w-full bg-navy-600" />
+      <div className="h-px w-full bg-ink-600" />
       <Field label="Denominator">
         <NumberField value={denominator} onChange={onDenominator} />
       </Field>

@@ -17,11 +17,11 @@ export function Logo({
         className
       )}
     >
-      <span className="rounded-xl bg-navy-800 p-1.5 ring-1 ring-gold-500/25 transition-shadow group-hover:ring-gold-500/50">
-        <LogoMark className={markClassName} />
+      <span className="rounded-xl bg-[#0D5C63] p-1.5 ring-1 ring-steel-400/30 transition-shadow group-hover:ring-crimson-500/60">
+        <LogoMark animated className={markClassName} />
       </span>
-      <span className="font-serif text-lg tracking-wide text-ivory-100">
-        Math <span className="gold-gradient-text">Concepts</span>
+      <span className="font-serif text-lg tracking-wide text-cloud-100">
+        Math <span className="crimson-gradient-text">Concepts</span>
       </span>
     </Link>
   );

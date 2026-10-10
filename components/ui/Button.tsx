@@ -6,10 +6,10 @@ type Variant = "primary" | "secondary" | "ghost";
 
 const variantClasses: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-b from-gold-300 via-gold-500 to-gold-600 text-navy-950 shadow-[0_8px_30px_rgba(212,175,55,0.25)] hover:shadow-[0_8px_36px_rgba(212,175,55,0.4)] hover:brightness-105",
+    "bg-gradient-to-b from-crimson-500 to-crimson-600 text-on-accent shadow-[0_8px_30px_rgba(13,92,99,0.25)] hover:shadow-[0_8px_36px_rgba(13,92,99,0.4)] hover:brightness-105",
   secondary:
-    "border border-gold-500/40 text-ivory-100 hover:border-gold-500/80 hover:bg-navy-800",
-  ghost: "text-ivory-100 hover:text-gold-400",
+    "border border-crimson-500/40 text-cloud-100 hover:border-crimson-500/80 hover:bg-ink-800",
+  ghost: "text-cloud-100 hover:text-crimson-400",
 };
 
 const baseClasses =

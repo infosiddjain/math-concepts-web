@@ -73,14 +73,14 @@ export function BasicCalculator() {
 
   return (
     <div className="mx-auto max-w-md">
-      <div className="rounded-2xl border border-gold-500/25 bg-navy-950/60 p-5">
-        <p className="h-5 truncate text-right font-mono text-sm text-slate-500">
+      <div className="rounded-2xl card-surface p-5">
+        <p className="h-5 truncate text-right font-mono text-sm text-steel-500">
           {preview && preview !== expression ? `= ${preview}` : " "}
         </p>
-        <p className="mt-1 min-h-12 break-all text-right font-serif text-3xl text-ivory-100 sm:text-4xl">
+        <p className="mt-1 min-h-12 break-all text-right font-serif text-3xl text-cloud-100 sm:text-4xl">
           {expression || "0"}
         </p>
-        {error ? <p className="mt-2 text-right text-sm text-rose-300">{error}</p> : null}
+        {error ? <p className="mt-2 text-right text-sm font-medium text-cloud-100">{error}</p> : null}
       </div>
 
       <div className="mt-4 grid grid-cols-4 gap-2.5">

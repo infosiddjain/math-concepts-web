@@ -82,10 +82,10 @@ export default function PrivacyPolicyPage() {
         <Container className="max-w-3xl space-y-10">
           {sections.map((section, i) => (
             <Reveal key={section.heading} delay={i * 0.04}>
-              <h2 className="font-serif text-xl text-ivory-100">{section.heading}</h2>
+              <h2 className="font-serif text-xl text-cloud-100">{section.heading}</h2>
               <div className="mt-3 space-y-3">
                 {section.body.map((p, j) => (
-                  <p key={j} className="text-sm leading-relaxed text-slate-400 sm:text-base">
+                  <p key={j} className="text-sm leading-relaxed text-steel-400 sm:text-base">
                     {p}
                   </p>
                 ))}

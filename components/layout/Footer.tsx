@@ -6,12 +6,12 @@ import { footerNav, site, socialLinks } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-gold-500/15 bg-navy-950">
+    <footer className="border-t border-crimson-500/15 bg-ink-950">
       <Container className="py-14">
         <div className="grid gap-12 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
             <Logo />
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-steel-400">
               {site.description}
             </p>
             <div className="mt-5 flex items-center gap-3">
@@ -22,7 +22,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-600 text-slate-400 transition-colors hover:border-gold-500/50 hover:text-gold-400"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-ink-600 text-steel-400 transition-colors hover:border-crimson-500/50 hover:text-crimson-400"
                 >
                   <Icon name={social.icon} className="h-4 w-4" />
                 </a>
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-crimson-400">
               Product
             </p>
             <ul className="mt-4 space-y-3">
@@ -39,7 +39,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-slate-400 transition-colors hover:text-gold-400"
+                    className="text-sm text-steel-400 transition-colors hover:text-crimson-400"
                   >
                     {item.label}
                   </Link>
@@ -49,7 +49,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-crimson-400">
               Company
             </p>
             <ul className="mt-4 space-y-3">
@@ -57,7 +57,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-slate-400 transition-colors hover:text-gold-400"
+                    className="text-sm text-steel-400 transition-colors hover:text-crimson-400"
                   >
                     {item.label}
                   </Link>
@@ -66,7 +66,7 @@ export function Footer() {
             </ul>
             <a
               href={`mailto:${site.email}`}
-              className="mt-4 inline-flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-gold-400"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-steel-400 transition-colors hover:text-crimson-400"
             >
               <Icon name="mail" className="h-4 w-4" />
               {site.email}
@@ -74,20 +74,20 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-navy-700 pt-8 sm:flex-row">
-          <p className="text-xs text-slate-500">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-ink-700 pt-8 sm:flex-row">
+          <p className="text-xs text-steel-500">
             © {new Date().getFullYear()} {site.name}. Crafted by{" "}
             <a
               href="https://portfolio-five-brown-mafnjkhjpf.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 transition-colors hover:text-gold-400"
+              className="text-steel-400 transition-colors hover:text-crimson-400"
             >
               {site.creator}
             </a>
             .
           </p>
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-steel-500">
             Built for learning and everyday calculation — not a substitute for professional financial, engineering, or medical advice.
           </p>
         </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     "unit converter",
     "fraction calculator",
     "learn math",
+    "math practice questions",
     "real world math",
   ],
   openGraph: {
@@ -48,15 +49,19 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#f8f3eb",
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-navy-900 text-ivory-100">
+      <body className="flex min-h-full flex-col bg-ink-900 text-cloud-100">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pt-[81px]">{children}</main>
         <Footer />
       </body>
     </html>

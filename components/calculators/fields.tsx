@@ -14,7 +14,7 @@ export function Field({
 }) {
   return (
     <label className={clsx("block", className)}>
-      <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+      <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.16em] text-steel-400">
         {label}
       </span>
       {children}
@@ -23,7 +23,7 @@ export function Field({
 }
 
 const controlClasses =
-  "w-full rounded-xl border border-navy-600 bg-navy-900/70 px-4 py-3 text-base text-ivory-100 outline-none transition-colors placeholder:text-slate-500 focus:border-gold-500/60";
+  "w-full rounded-xl border border-ink-600 bg-ink-900/70 px-4 py-3 text-base text-cloud-100 outline-none transition-colors placeholder:text-steel-500 focus:border-crimson-500/60";
 
 export function NumberField({
   value,
@@ -90,7 +90,7 @@ export function SelectField({
       className={clsx(controlClasses, "appearance-none", className)}
     >
       {options.map((opt) => (
-        <option key={opt.value} value={opt.value} className="bg-navy-800">
+        <option key={opt.value} value={opt.value} className="bg-ink-800">
           {opt.label}
         </option>
       ))}
@@ -110,19 +110,19 @@ export function ResultPanel({
   helper?: string;
 }) {
   return (
-    <div className="rounded-2xl border border-gold-500/25 bg-navy-950/60 p-6">
-      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-500">
+    <div className="rounded-2xl card-surface p-6">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-crimson-400">
         {label}
       </p>
       {error ? (
-        <p className="mt-2 text-sm text-rose-300">{error}</p>
+        <p className="mt-2 text-sm font-medium text-cloud-100">{error}</p>
       ) : (
-        <p className="mt-2 break-all font-serif text-3xl text-ivory-100 sm:text-4xl">
+        <p className="mt-2 break-all font-serif text-3xl text-cloud-100 sm:text-4xl">
           {value ?? "—"}
         </p>
       )}
       {helper && !error ? (
-        <p className="mt-2 text-sm text-slate-400">{helper}</p>
+        <p className="mt-2 text-sm text-steel-400">{helper}</p>
       ) : null}
     </div>
   );

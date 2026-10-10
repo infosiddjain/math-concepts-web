@@ -8,15 +8,15 @@ type Tone = "digit" | "operator" | "action" | "equals" | "function";
 
 const toneClasses: Record<Tone, string> = {
   digit:
-    "bg-navy-800 text-ivory-100 hover:bg-navy-700 border border-navy-600",
+    "bg-ink-800 text-cloud-100 hover:bg-ink-700 border border-ink-600",
   operator:
-    "bg-navy-700 text-gold-300 hover:bg-navy-600 border border-navy-600",
+    "bg-ink-700 text-crimson-300 hover:bg-ink-600 border border-ink-600",
   action:
-    "bg-navy-900 text-slate-300 hover:bg-navy-800 border border-navy-600",
+    "bg-ink-900 text-steel-400 hover:bg-ink-800 border border-ink-600",
   equals:
-    "bg-gradient-to-b from-gold-300 via-gold-500 to-gold-600 text-navy-950 shadow-[0_6px_24px_rgba(212,175,55,0.3)]",
+    "bg-gradient-to-b from-crimson-500 to-crimson-600 text-on-accent shadow-[0_6px_24px_rgba(13,92,99,0.3)]",
   function:
-    "bg-navy-800/70 text-ivory-200 hover:bg-navy-700 border border-navy-600 text-xs sm:text-sm",
+    "bg-ink-800/70 text-cloud-200 hover:bg-ink-700 border border-ink-600 text-xs sm:text-sm",
 };
 
 export function KeypadButton({

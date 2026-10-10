@@ -14,24 +14,24 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden border-b border-navy-700 bg-grid">
+    <section className="relative overflow-hidden border-b border-ink-700 bg-grid">
       <div
         className="pointer-events-none absolute -top-32 left-1/2 h-80 w-[680px] -translate-x-1/2 rounded-full opacity-20 blur-3xl"
         style={{
           background:
-            "radial-gradient(closest-side, rgba(212,175,55,0.35), transparent)",
+            "radial-gradient(closest-side, rgba(212,175,55,0.3), transparent)",
         }}
       />
       <Container className="relative py-16 sm:py-20">
         <Reveal className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold-500">
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-crimson-400">
             {eyebrow}
           </p>
-          <h1 className="mt-3 font-serif text-3xl leading-tight text-balance text-ivory-100 sm:text-5xl">
+          <h1 className="mt-3 font-serif text-3xl leading-tight text-balance text-cloud-100 sm:text-5xl">
             {title}
           </h1>
           {description ? (
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-400">
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-steel-400">
               {description}
             </p>
           ) : null}

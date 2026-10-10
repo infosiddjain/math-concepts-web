@@ -179,9 +179,9 @@ export function ScientificCalculator() {
 
   return (
     <div className="mx-auto max-w-xl">
-      <div className="rounded-2xl border border-gold-500/25 bg-navy-950/60 p-5">
+      <div className="rounded-2xl card-surface p-5">
         <div className="flex items-center justify-between">
-          <div className="inline-flex overflow-hidden rounded-full border border-navy-600 text-xs">
+          <div className="inline-flex overflow-hidden rounded-full border border-ink-600 text-xs">
             {(["deg", "rad"] as AngleMode[]).map((m) => (
               <button
                 key={m}
@@ -189,8 +189,8 @@ export function ScientificCalculator() {
                 className={clsx(
                   "px-3 py-1.5 font-semibold uppercase tracking-wide transition-colors",
                   mode === m
-                    ? "bg-gold-500 text-navy-950"
-                    : "bg-navy-900 text-slate-400 hover:text-ivory-100"
+                    ? "bg-crimson-500 text-on-accent"
+                    : "bg-ink-900 text-steel-400 hover:text-cloud-100"
                 )}
               >
                 {m}
@@ -198,15 +198,15 @@ export function ScientificCalculator() {
             ))}
           </div>
           {pendingOp ? (
-            <span className="font-mono text-xs text-slate-500">
+            <span className="font-mono text-xs text-steel-500">
               {formatResult(accumulator ?? 0)} {pendingOp}
             </span>
           ) : null}
         </div>
-        <p className="mt-3 min-h-12 break-all text-right font-serif text-3xl text-ivory-100 sm:text-4xl">
+        <p className="mt-3 min-h-12 break-all text-right font-serif text-3xl text-cloud-100 sm:text-4xl">
           {display}
         </p>
-        {error ? <p className="mt-2 text-right text-sm text-rose-300">{error}</p> : null}
+        {error ? <p className="mt-2 text-right text-sm font-medium text-cloud-100">{error}</p> : null}
       </div>
 
       <div className="mt-4 grid grid-cols-4 gap-2">

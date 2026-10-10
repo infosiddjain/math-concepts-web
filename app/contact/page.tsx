@@ -33,24 +33,24 @@ export default function ContactPage() {
               {details.map((detail) => (
                 <div
                   key={detail.label}
-                  className="flex items-start gap-4 rounded-2xl border border-navy-600 bg-navy-800/50 p-5"
+                  className="flex items-start gap-4 rounded-2xl card-surface p-5"
                 >
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-navy-700 text-gold-400">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-ink-700 text-crimson-400">
                     <Icon name={detail.icon} className="h-5 w-5" />
                   </span>
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-steel-500">
                       {detail.label}
                     </p>
                     {detail.href ? (
                       <a
                         href={detail.href}
-                        className="mt-1 block text-ivory-100 transition-colors hover:text-gold-400"
+                        className="mt-1 block text-cloud-100 transition-colors hover:text-crimson-400"
                       >
                         {detail.value}
                       </a>
                     ) : (
-                      <p className="mt-1 text-ivory-100">{detail.value}</p>
+                      <p className="mt-1 text-cloud-100">{detail.value}</p>
                     )}
                   </div>
                 </div>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-navy-600 text-slate-400 transition-colors hover:border-gold-500/50 hover:text-gold-400"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-ink-600 text-steel-400 transition-colors hover:border-crimson-500/50 hover:text-crimson-400"
                 >
                   <Icon name={social.icon} className="h-4 w-4" />
                 </a>
@@ -74,7 +74,7 @@ export default function ContactPage() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <div className="rounded-2xl border border-gold-500/25 bg-navy-950/60 p-6 sm:p-8">
+            <div className="rounded-2xl card-surface p-6 sm:p-8">
               <ContactForm />
             </div>
           </Reveal>

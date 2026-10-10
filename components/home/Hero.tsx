@@ -19,7 +19,7 @@ export function Hero() {
         className="pointer-events-none absolute -top-40 left-1/2 h-[520px] w-[820px] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
         style={{
           background:
-            "radial-gradient(closest-side, rgba(212,175,55,0.35), transparent)",
+            "radial-gradient(closest-side, rgba(212,175,55,0.3), transparent)",
         }}
       />
 
@@ -29,7 +29,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-navy-800/60 px-4 py-1.5 text-xs font-medium tracking-wide text-gold-300"
+            className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-crimson-500/30 bg-ink-800/60 px-4 py-1.5 text-xs font-medium tracking-wide text-crimson-300"
           >
             <Icon name="sparkle" className="h-3.5 w-3.5" />
             Precision calculators, real-world understanding
@@ -39,18 +39,18 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="font-serif text-4xl leading-[1.1] text-balance text-ivory-100 sm:text-6xl"
+            className="font-serif text-4xl leading-[1.1] text-balance text-cloud-100 sm:text-6xl"
           >
             Calculate with precision.
             <br />
-            <span className="gold-gradient-text">Understand with clarity.</span>
+            <span className="crimson-gradient-text">Understand with clarity.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-slate-400 sm:text-lg"
+            className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-steel-400 sm:text-lg"
           >
             Math Concepts brings together every calculator you reach for and the
             real-world thinking behind it — in one refined, distraction-free studio.
@@ -80,12 +80,12 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: chip.delay, ease: [0.16, 1, 0.3, 1] }}
               style={{ top: chip.top, left: chip.left }}
-              className="absolute flex items-center gap-2 rounded-2xl border border-gold-500/20 bg-navy-800/70 px-4 py-3 text-sm text-ivory-200 shadow-[0_12px_40px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+              className="absolute flex items-center gap-2 rounded-2xl card-surface px-4 py-3 text-sm text-cloud-200"
             >
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-navy-700 text-gold-400">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ink-700 text-crimson-400">
                 <Icon name={chip.icon} className="h-4 w-4" />
               </span>
-              <span className="font-mono text-xs text-ivory-200 sm:text-sm">
+              <span className="font-mono text-xs text-cloud-200 sm:text-sm">
                 {chip.label}
               </span>
             </motion.div>

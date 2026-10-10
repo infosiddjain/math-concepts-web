@@ -27,6 +27,11 @@ import {
   PiRuler,
   PiCube,
   PiInfinity,
+  PiPencilSimpleLine,
+  PiXCircle,
+  PiArrowCounterClockwise,
+  PiTrophy,
+  PiWarning,
 } from "react-icons/pi";
 import {
   FaGithub,
@@ -64,6 +69,11 @@ const icons: Record<string, IconType> = {
   ruler: PiRuler,
   cube: PiCube,
   infinity: PiInfinity,
+  practice: PiPencilSimpleLine,
+  wrong: PiXCircle,
+  retry: PiArrowCounterClockwise,
+  trophy: PiTrophy,
+  warning: PiWarning,
   github: FaGithub,
   linkedin: FaLinkedin,
   twitter: FaXTwitter,

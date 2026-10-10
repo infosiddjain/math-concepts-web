@@ -26,7 +26,8 @@ const sections = [
   {
     heading: "3. Information you choose to provide",
     body: [
-      "If you use the Contact form, the name, email address, and message you enter are sent directly to our support inbox via your own email application (a standard 'mailto' link) — this information passes through your email provider, not through our servers.",
+      "If you use the Contact form, the name, email address, and message you enter are sent to our support inbox through HubForm, a third-party form-delivery service. We use this information only to read and reply to your message, and we do not add you to any mailing list.",
+      "We keep contact form messages only as long as needed to respond to and resolve your inquiry. You can ask us to delete a message you sent by emailing us.",
       "If you contact us directly by email, we retain that correspondence only as long as needed to respond to and resolve your inquiry.",
     ],
   },
